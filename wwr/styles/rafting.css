@@ -1,9 +1,13 @@
 :root {
   --secondary-color: #041252; /*  dark blue */
-  --heading-font: "Aptos(Body)";
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .hero {
   position: relative;
 }
@@ -25,7 +29,7 @@ h1 {
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
 }
 
-article {
+.hero article {
   position: absolute;
   bottom: 30px;
   width: 80%;
@@ -69,4 +73,8 @@ h2 {
   opacity: 0.8;
   background-color: var(--secondary-color);
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
