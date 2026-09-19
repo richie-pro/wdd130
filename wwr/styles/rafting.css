@@ -35,11 +35,11 @@ h1 {
   bottom: 30px;
   width: 80%;
   text-align: left;
-  padding: 16px;
+  padding-left: .25em;
   opacity: 0.8;
   background-color:var(--secondary-color);
   left: 118px;
-  nav-right: 5rem;
+  nav-right: 20px;
   color: #eee
 
 }
@@ -74,6 +74,7 @@ h2 {
   opacity: 0.8;
   background-color: var(--secondary-color);
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
+  padding: 10 150px;
 }
 
 .socialmedia a {
