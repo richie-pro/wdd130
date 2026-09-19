@@ -39,7 +39,6 @@ h1 {
   opacity: 0.8;
   background-color:var(--secondary-color);
   left: 118px;
-  nav-right: 20px;
   color: #eee
 
 }
@@ -65,9 +64,9 @@ article p {
 footer {
     font-size: small;
 }
+
 h2 {
-  position: bottom;
-  top: 20px;
+top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
