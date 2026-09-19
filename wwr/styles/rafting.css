@@ -1,0 +1,72 @@
+:root {
+  --secondary-color: #041252; /*  dark blue */
+  --heading-font: "Aptos(Body)";
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--secondary-color);
+  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+}
+
+article {
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  text-align: left;
+  padding-left: .25em;
+  opacity: 0.8;
+  background-color:var(--secondary-color);
+  left: 118px;
+  nav-right: 20px;
+  color: #eee
+
+}
+
+article p {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  padding-right: .5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .5em;
+}
+
+.socialmedia img {
+    padding: .5em;
+
+}
+footer {
+    font-size: small;
+}
+h2 {
+  position: bottom;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.8;
+  background-color: var(--secondary-color);
+  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+}
