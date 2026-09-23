@@ -73,7 +73,7 @@ top: 20px;
   opacity: 0.8;
   background-color: var(--secondary-color);
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
-  padding: 10 150px;
+  padding: 10px 150px;
 }
 
 .socialmedia a {
