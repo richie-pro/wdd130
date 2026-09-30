@@ -12,8 +12,60 @@
   position: relative;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:white; /* Match your light purple/neutral wireframe background if desired */
+}
+
+header nav ul.navigation {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul.navigation li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+}
+
+header img {
+  grid-template-columns: 1fr 3fr 1fr;
+  width: 100px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+ list-style: none;
+ gap: 1.5rem;
+ padding:0;
+ margin:0;
+}
+nav {
+  justify-self: end;
+  display: block;
+  background-color: #a8722a;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.history-grid img {
+  width: 100%;
+  height: auto;
+}
+
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
     padding: 16px;
@@ -25,9 +77,8 @@ h1 {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--secondary-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+  background-color: none;
+  color: #eee; 
 }
 
 .hero article {
@@ -58,24 +109,42 @@ article p {
 }
 
 .socialmedia img {
-    padding: .5em;
+    padding: .25em;
 
 }
 footer {
-    font-size: small;
+  display: block;
+  font-size: large;
+  background-color: #a8722a;
+  opacity: 0.9;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
 }
 
 h2 {
-top: 20px;
+ top: 20px;
   width: 100%;
-  padding: 16px;
+ padding: 16px;
   text-align: center;
-  opacity: 0.8;
-  background-color: var(--secondary-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
-  padding: 10px 150px;
-}
+  background-color: #fff; /* white background */
+  color: black; 
+ }  
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventure-grid img {
+    width: 150px;
+    height: 150px;      /* Keeps them from being too tall */
+    object-fit: cover;  /* Crops them nicely */
+    border-radius: 6px;
+    gap: 1rem;
 }
