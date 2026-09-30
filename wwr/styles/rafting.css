@@ -1,5 +1,10 @@
 :root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #1b365d;
+    --accent-color: #a8722a;
+    --text-dark: #111111;
+    --text-light: #fff;
+    --bg-light: #f4f4f4;
+    --font-stack: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -7,8 +12,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
 .hero {
-  position: relative;
+    position: relative;
 }
 
 header {
@@ -16,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color:white; /* Match your light purple/neutral wireframe background if desired */
+    background-color: var(--text-light);
 }
 
 header nav ul.navigation {
@@ -29,68 +41,60 @@ header nav ul.navigation li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid #ccc;
-    background-color: #fff;
-    color: #333;
+    background-color: var(--text-light);
+    color: var(--text-dark);
     border-radius: 4px;
 }
 
 header img {
-  grid-template-columns: 1fr 3fr 1fr;
-  width: 100px;
-  height: auto;
-}
-
-.navigation {
-  display: flex;
- list-style: none;
- gap: 1.5rem;
- padding:0;
- margin:0;
-}
-nav {
-  justify-self: end;
-  display: block;
-  background-color: #a8722a;
+    width: 100px;
+    height: auto;
 }
 
 .history-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .history-grid img {
-  width: 100%;
-  height: auto;
-}
-
-.hero img {
     width: 100%;
     height: auto;
-    padding: 16px;
-  }
+    border-radius: 6px;
+}
+
+.hero img.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  background-color: none;
-  color: #eee; 
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Solid enough for high contrast */
+    color: var(--primary-color);
 }
 
 .hero article {
-  display: block;
-  position: absolute;
-  bottom: 30px;
-  width: 80%;
-  text-align: left;
-  padding-left: .25em;
-  opacity: 0.8;
-  background-color:#a8722a;
-  left: 118px;
-  color: #eee
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    text-align: left;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    left: 10%;
+    color: var(--text-light);
+    border-radius: 6px;
+}
+
+.hero article p, .history p {
+    color: var(--text-dark);
 }
 
 article p {
@@ -99,51 +103,66 @@ article p {
 }
 
 .hero article img {
-  float: right;
-  width: 125px;
-  padding-right: .5em;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: .5em;
+    float: right;
+    width: 125px;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 6px;
 }
 
 .socialmedia img {
+    width: 30px;
+    height: auto;
     padding: .25em;
-
 }
+
 footer {
-  display: block;
-  font-size: large;
-  background-color: #a8722a;
-  opacity: 0.9;
-  text-align: center;
-  margin-bottom: 3rem;
-  padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
 }
 
 h2 {
- top: 20px;
-  width: 100%;
- padding: 16px;
-  text-align: center;
-  background-color: #fff; /* white background */
-  color: black; 
- }  
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+} 
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.adventures {
+    padding: 2rem;
 }
 
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
+    padding: 1rem 0;
+}
+
+.adventure-grid figure {
+    text-align: center;
 }
 
 .adventure-grid img {
-    width: 150px;
-    height: 150px;      /* Keeps them from being too tall */
-    object-fit: cover;  /* Crops them nicely */
+    width: 100%;
+    height: 150px;      
+    object-fit: cover;  
     border-radius: 6px;
-    gap: 1rem;
+}
+
+.adventure-grid figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
