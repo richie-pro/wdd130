@@ -81,16 +81,16 @@ h1 {
 }
 
 .hero article {
+  display: block;
   position: absolute;
   bottom: 30px;
   width: 80%;
   text-align: left;
   padding-left: .25em;
   opacity: 0.8;
-  background-color:var(--secondary-color);
+  background-color:#a8722a;
   left: 118px;
   color: #eee
-
 }
 
 article p {
