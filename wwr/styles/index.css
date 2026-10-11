@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #081C15;
+    --secondary-color: #1b4322;
+    --text-dark: #000000;
+    --text-dark2: #fca311;
+    --text-light: #b1a7a6;
+    --bg-light: #e5e5e5;
+    --font-stack: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section h1 {
+    position: absolute;
+    top: 30px;
+    width: 90%;          
+    max-width: 1000px;   
+    margin-left: 3rem;
+    margin-top: 5rem;   
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--text-dark2);
+    font-weight: bolder;
+}
+
+.hero-section img {
+    width: 90%;
+    height: auto;
+    display: block;
+    padding: .25rem;
+    border-radius: 10px;
+    margin-left: 3.4rem;
+    border:solid #081C15;
+}
+
+
+button[type="go-to-trips"] {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    position: relative;
+    padding: 0.5rem;
+    border: solid #081C15;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    /* margin:8rem 8rem; */
+    margin-left: 28rem;
+    margin-top: 2rem;
+}
+button[type="go-to-trips"]:hover {
+
+    background-color: #081C15;
+}
+button a {
+    color: var(--text-dark2);
+}
+
+.home {
+    display:grid;
+}
+
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.home-grid figure {
+    display: flex;
+    text-align: center;
+    background-color:var(--secondary-color);
+    border-radius: 6px;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid #081C15;
+}
+
+.home-grid img {
+    width: 100%;
+    height: 150px;      
+    object-fit: cover;  
+    border-radius: 1px;
+    border: 1px solid #081C15;
+}
+
+.home-grid figcaption {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem;
+}

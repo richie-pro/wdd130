@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #1b365d;
-    --accent-color: #a8722a;
-    --text-dark: #111111;
-    --text-light: #fff;
-    --bg-light: #f4f4f4;
+    --primary-color: #081C15;
+    --secondary-color: #1b4322;
+    --text-dark: #000000;
+    --text-dark2: #fca311;
+    --text-light: #b1a7a6;
+    --bg-light: #e5e5e5;
     --font-stack: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -27,28 +28,34 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--text-light);
+    width: 1047px;
+    margin-left: 2rem;
+    background-color: var(--primary-color);
 }
 
 header nav ul.navigation {
     display: flex;
     list-style: none;
     gap: 1rem;
+    padding: 1rem;
 }
 
 header nav ul.navigation li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    background-color: var(--text-light);
-    color: var(--text-dark);
+    border: 1px solid #081C10;
+    background-color: var(--secondary-color);
+    color: var(--text-dark2);
     border-radius: 4px;
 }
 
+
+
 header img {
-    width: 100px;
-    height: auto;
+    width: 150px;
+    height: 90px;
+    border-radius: 30px;
+    padding: 1rem;
 }
 
 .history-grid {
@@ -57,6 +64,10 @@ header img {
     gap: 2rem;
     padding: 2rem;
 }
+.history {
+    padding: 2rem;
+    color: #081C15;
+}
 
 .history-grid img {
     width: 100%;
@@ -64,37 +75,56 @@ header img {
     border-radius: 6px;
 }
 
-.hero img.hero-img {
+.hero img {
     width: 100%;
     height: auto;
     display: block;
+    padding: .25rem;
+    border-radius: 10px;
+    margin-right: 1rem;
 }
 
-h1 {
+.hero { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.hero h1 {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+    top: 30px;
+    left:.25px;
+    width: 98.4%;          
+    margin-bottom: 1rem 1rem;   
+    padding-top: 1rem;
+    justify-self: center;
+    padding-bottom: 2rem;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Solid enough for high contrast */
-    color: var(--primary-color);
+    color: var(--text-light);
+    background-color: #081C15;
+    opacity: 0.8;
 }
 
 .hero article {
     display: block;
     position: absolute;
+    margin-bottom: 1rem;
     bottom: 30px;
     width: 80%;
     text-align: left;
     padding: 1rem;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     left: 10%;
-    color: var(--text-light);
+    color: var(--text-dark);
+    font-style: oblique;
     border-radius: 6px;
 }
 
 .hero article p, .history p {
-    color: var(--text-dark);
+    color: var(--text-light);
 }
 
 article p {
@@ -121,8 +151,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
-    background-color: var(--accent-color);
-    color: var(--text-dark);
+    background-color: var(--secondary-color);
+    color: var(--text-dark2);
     padding: 1.5rem 2rem;
     margin-top: 3rem;
 }
@@ -133,6 +163,7 @@ h2 {
     text-align: center;
     background-color: var(--text-light);
     color: var(--text-dark);
+    border: 1px solid #081C10;
 } 
 
 .socialmedia a {
@@ -141,6 +172,7 @@ h2 {
 
 .adventures {
     padding: 2rem;
+    color: #081C15;
 }
 
 .adventure-grid {
@@ -166,3 +198,8 @@ h2 {
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+button[type="home"]:hover {
+    background-color: #1b4322;
+}
+

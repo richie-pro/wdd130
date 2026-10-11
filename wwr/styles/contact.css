@@ -4,7 +4,6 @@
 
 .company-header {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .company-header address {
@@ -13,7 +12,7 @@
 }
 
 .team-section {
-    border: 1px solid #ccc;
+    border: 1px solid #1b4322;
     background-color: #f9f9f9;
     padding: 2rem;
     text-align: center;
@@ -111,6 +110,7 @@ figure img {
  width: 150px;
  height: 150px;
  border-radius: 8px;
+ border: 1px solid #081C10;
 }
 
 input[type="text"],
@@ -145,7 +145,7 @@ button[type="submit"] {
 }
 button[type="submit"]:hover {
 
-    background-color: var(--accent-color);
+    background-color:#1b4322;
 
 }
 
@@ -160,5 +160,4 @@ form {
 .checkbox-group {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
 }
